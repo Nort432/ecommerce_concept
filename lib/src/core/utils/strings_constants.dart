@@ -13,3 +13,4 @@ const String kSeeMore = 'see more';
 const String kBestSeller = 'Best Seller';
 const String kExplorer = 'Explorer';
 const String kNew = 'New';
+const String kDollar = "\$";

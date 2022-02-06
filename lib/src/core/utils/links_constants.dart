@@ -1,24 +1,21 @@
-// API url
-const String kProtocol = 'https://';
-const String kThirdLevelDomain = 'shopapi-0575';
-const String kDot = '.';
-const String kSecondLevelDomain = 'restdb';
-const String kFirstLevelDomain = 'io';
-const String kBaseUrl = kProtocol +
-    kThirdLevelDomain +
-    kDot +
-    kSecondLevelDomain +
-    kFirstLevelDomain;
-// second part
+/// API url
+const String kBaseUrl = 'https://shopapi-0575.restdb.io/';
+
+// API key
 const String kApiKeyName = 'x-apikey';
 const String kApiKey = '61ddae2e95cb716ea5ee48e4';
-const String kRest = 'rest';
-const String kSlash = '/';
 
-const String kHome = 'home';
+// Api content
+const String kContentType = 'Content-Type';
+const String kAppJson = 'application/json';
 
-// API links
+/// Headers for API
+const Map<String, String> kBaseHeaders = {
+  kContentType: kAppJson,
+  kApiKeyName: kApiKey
+};
+
 /// https://shopapi-0575.restdb.io/rest/home
 ///
-/// get goods
-const String kUrlHome = kSlash + kRest + kSlash + kHome;
+/// get goods for page Home
+const String kUrlHome = 'rest/home';
