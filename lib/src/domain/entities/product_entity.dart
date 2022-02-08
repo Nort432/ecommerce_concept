@@ -9,7 +9,7 @@ class ProductEntity extends Equatable {
     required this.bestSeller,
   });
 
-  final int id;
+  final String id;
   final List<HomeStoreEntity> homeStore;
   final List<BestSellerEntity> bestSeller;
 

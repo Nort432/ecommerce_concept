@@ -14,3 +14,17 @@ const String kBestSeller = 'Best Seller';
 const String kExplorer = 'Explorer';
 const String kNew = 'New';
 const String kDollar = "\$";
+
+// svg
+const String kSvgFilter = 'assets/icons/filter.svg';
+const String kSvgLocation = 'assets/icons/location.svg';
+const String kSvgArrow = 'assets/icons/arrow.svg';
+const String kSvgComputer = 'assets/icons/computer.svg';
+const String kSvgPhone = 'assets/icons/phone.svg';
+const String kSvgHealth = 'assets/icons/health.svg';
+const String kSvgBooks = 'assets/icons/books.svg';
+const String kSvgHeadphones = 'assets/icons/headphones.svg';
+
+// routes
+const String kRouteErrorView = '/ErrorView';
+const String kRouteHomeView = '/';

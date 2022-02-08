@@ -12,12 +12,12 @@ class RemoteProductsLoading extends RemoteProductsState {
 }
 
 class RemoteProductsDone extends RemoteProductsState {
-  const RemoteProductsDone(this.homeEntity);
+  const RemoteProductsDone(this.productEntity);
 
-  final List<ProductEntity> homeEntity;
+  final ProductEntity productEntity;
 
   @override
-  List<Object> get props => [homeEntity];
+  List<Object> get props => [productEntity];
 }
 
 class RemoteProductsError extends RemoteProductsState {

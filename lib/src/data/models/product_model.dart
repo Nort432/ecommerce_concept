@@ -4,14 +4,14 @@ import 'package:ecommerce_concept/src/domain/entities/product_entity.dart';
 
 class ProductModel extends ProductEntity {
   ProductModel(
-      {required int id,
+      {required String id,
       required List<HomeStoreModel> homeStore,
       required List<BestSellerModel> bestSeller})
       : super(id: id, homeStore: homeStore, bestSeller: bestSeller);
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
-        id: json['_id'] as int,
+        id: json['_id'] as String,
         homeStore: json['home_store'] != null
             ? (json['home_store'] as List<dynamic>)
                 .map<HomeStoreModel>((e) => HomeStoreModel.fromJson(e))

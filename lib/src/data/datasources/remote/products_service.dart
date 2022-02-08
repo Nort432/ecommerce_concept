@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:convert';
+
 import 'package:ecommerce_concept/src/core/utils/links_constants.dart';
 import 'package:ecommerce_concept/src/data/models/product_model.dart';
 import 'package:retrofit/retrofit.dart';
@@ -14,5 +17,7 @@ abstract class ProductsService {
     kContentType : kAppJson,
     kApiKeyName : kApiKey
   })
-  Future<HttpResponse<ProductModel>> fetchHomePage();
+  Future<HttpResponse<ProductModel>> fetchProductsService();
+
+  Future<HttpResponse<void>> buttonCategoryService();
 }
