@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:equatable/equatable.dart';
 
-class ButtonCircleModel extends Equatable {
-  ButtonCircleModel(
+class ButtonCircleEntity extends Equatable {
+  ButtonCircleEntity(
       {required this.name,
         required this.backgroundColor,
         required this.nameColor,

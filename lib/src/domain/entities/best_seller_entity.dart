@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 class BestSellerEntity extends Equatable {
-  const BestSellerEntity(
+   const BestSellerEntity(
       {required this.id,
       required this.isFavorites,
       required this.title,
@@ -14,7 +14,7 @@ class BestSellerEntity extends Equatable {
   final String title;
   final int priceWithoutDiscount;
   final int discountPrice;
-  final String picture;
+   final String picture;
 
   @override
   List<Object> get props =>

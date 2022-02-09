@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/utils/strings_constants.dart';
-import '../../data/models/button_colors_model.dart';
+import '../../domain/entities/button_colors_entity.dart';
 
 class AppColors {
   static const Color pageBackground = Color(0xFFE5E5E5);
@@ -10,10 +10,16 @@ class AppColors {
 
   static const Color buttonBackground = Color(0xFFFFFFFF);
   static const Color buttonBackgroundOrange = Color(0xFFFF6E4E);
+  static Color buttonFavoriteLightGrey = Colors.grey.shade200;
 
   static const Color containerWhite = Color(0xFFFFFFFF);
+  static const Color containerLightGrey = Color(0xFFC4C4C4);
 
   static const Color hintTextGrey = Colors.grey;
+
+  static const Color bottomNavBar = Color(0xFF010035);
+
+  static const Color loading = Colors.red;
 
   static const Color text = Color(0xFF010035);
   static const Color textOrange = Color(0xFFFF6E4E);

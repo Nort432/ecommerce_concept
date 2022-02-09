@@ -1,14 +1,14 @@
 import 'package:bloc/bloc.dart';
 import 'package:ecommerce_concept/src/config/colors/app_colors.dart';
-import 'package:ecommerce_concept/src/data/models/button_colors_model.dart';
+import 'package:ecommerce_concept/src/domain/entities/button_colors_entity.dart';
 
-class PressCategoryCubit extends Cubit<List<ButtonCircleModel>> {
-  PressCategoryCubit(List<ButtonCircleModel> listButtonsColors)
+class PressCategoryCubit extends Cubit<List<ButtonCircleEntity>> {
+  PressCategoryCubit(List<ButtonCircleEntity> listButtonsColors)
       : super(listButtonsColors);
 
   void pressCategoryButtons(String name) {
-    List<ButtonCircleModel> myState = state
-        .map((m) => ButtonCircleModel(
+    List<ButtonCircleEntity> myState = state
+        .map((m) => ButtonCircleEntity(
             name: m.name,
             svgSource: m.svgSource,
             nameColor: m.nameColor,

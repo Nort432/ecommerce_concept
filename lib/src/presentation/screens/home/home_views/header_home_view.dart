@@ -3,8 +3,8 @@ import 'package:ecommerce_concept/src/presentation/widgets/texts/my_text_event_w
 import 'package:ecommerce_concept/src/presentation/widgets/texts/my_text_widget.dart';
 import 'package:flutter/material.dart';
 
-class HeaderTextButtonView extends StatelessWidget {
-  const HeaderTextButtonView(
+class HeaderHomeView extends StatelessWidget {
+  const HeaderHomeView(
       {required this.padding,
       required this.textButton,
       required this.text,

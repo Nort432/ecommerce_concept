@@ -1,7 +1,7 @@
 import 'package:ecommerce_concept/src/config/colors/app_colors.dart';
 import 'package:ecommerce_concept/src/config/sizes/app_sizes.dart';
 import 'package:ecommerce_concept/src/core/utils/strings_constants.dart';
-import 'package:ecommerce_concept/src/data/models/button_colors_model.dart';
+import 'package:ecommerce_concept/src/domain/entities/button_colors_entity.dart';
 import 'package:ecommerce_concept/src/presentation/bloc/press_category/press_category_cubit.dart';
 import 'package:ecommerce_concept/src/presentation/widgets/buttons/my_button_circle_widget.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +22,7 @@ class TopButtonsHomeView extends StatelessWidget {
       padding: AppSizes.buttonsAllPadding,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
-        child: BlocBuilder<PressCategoryCubit, List<ButtonCircleModel>>(
+        child: BlocBuilder<PressCategoryCubit, List<ButtonCircleEntity>>(
             builder: (context, state) {
           return Row(
             children: [

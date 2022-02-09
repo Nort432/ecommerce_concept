@@ -1,3 +1,4 @@
+import 'package:ecommerce_concept/src/config/colors/app_colors.dart';
 import 'package:ecommerce_concept/src/core/utils/strings_constants.dart';
 import 'package:ecommerce_concept/src/presentation/bloc/remote_home/remote_products_bloc.dart';
 import 'package:ecommerce_concept/src/presentation/screens/home/home_views/build_page_home_view.dart';
@@ -19,7 +20,7 @@ class HomeView extends StatelessWidget {
     Widget loading = Scaffold(
         body: Center(
             child: CupertinoActivityIndicator(
-      color: Colors.red,
+      color: AppColors.loading,
     )));
 
     return BlocBuilder<RemoteProductsBloc, RemoteProductsState>(
