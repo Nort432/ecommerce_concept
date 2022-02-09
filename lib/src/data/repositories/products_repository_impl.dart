@@ -38,10 +38,4 @@ class ProductsRepositoryImpl implements ProductsRepository {
       return DataFailed(e);
     }
   }
-
-  @override
-  Future<DataState<void>> buttonCategoryRepository(NoParams noParams) {
-    // TODO: implement buttonCategoryRepository
-    throw UnimplementedError();
-  }
 }

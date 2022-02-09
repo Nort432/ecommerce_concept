@@ -22,7 +22,7 @@ class RemoteProductsBloc
 
   final FetchProductsUseCase fetchProductsUseCase;
 
-  late final ProductEntity _products;
+  late final ProductEntity products;
 
   Future<void> _onProductsFetched(
     FetchProducts event,
@@ -31,9 +31,9 @@ class RemoteProductsBloc
     final DataState dataState = await fetchProductsUseCase(NoParams());
 
     if (dataState is DataSuccess && dataState.data != null) {
-      _products = dataState.data as ProductEntity;
+      products = dataState.data as ProductEntity;
 
-      return emit(RemoteProductsDone(_products));
+      return emit(RemoteProductsDone(products));
     }
 
     if (dataState is DataFailed) {

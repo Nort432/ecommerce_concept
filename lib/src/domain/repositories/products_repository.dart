@@ -6,5 +6,4 @@ import 'package:ecommerce_concept/src/domain/entities/product_entity.dart';
 
 abstract class ProductsRepository {
   Future<DataState<ProductEntity>> fetchProductsRepository(NoParams noParams);
-  Future<DataState<void>> buttonCategoryRepository(NoParams noParams);
 }

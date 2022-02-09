@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         BlocProvider<RemoteProductsBloc>(
             create: (context) => injector()..add(const FetchProducts())),
         BlocProvider<PressCategoryCubit>(
-          create: (context) => PressCategoryCubit(AppColors.listColors)),
+          create: (context) => PressCategoryCubit(AppTheme.listButtons)),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
